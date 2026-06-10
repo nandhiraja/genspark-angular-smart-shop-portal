@@ -4,7 +4,7 @@ import { Products } from './components/products/products';
 import { ProductsDetails } from './components/products-details/products-details';
 import { Landingpage } from './components/landingpage/landingpage';
 import { Profile } from './components/profile/profile';
-import { authGuard } from './gaurds/auth.guard';
+import { authGuard } from './guards/auth.guard';
 export const routes: Routes = [
     {path:'',component:Landingpage},
     {path:'login',component:Login},
