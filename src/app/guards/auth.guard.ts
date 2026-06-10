@@ -12,10 +12,9 @@ export const authGuard: CanActivateFn = () => {
     map(resp => !!resp), 
     tap(isAuth => {
       if (!isAuth) {
-        router.navigate(['']); 
-        return false;
+        window.alert("You have to login first.. to see product details")
+        router.navigate(['login']); 
       }
-      else return true;
     })
   );
 };

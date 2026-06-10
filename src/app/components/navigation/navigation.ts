@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { isLoggedIn, logout, UserName } from '../../operators/auth.operator';
+import { hasToken, isLoggedIn, logout, UpdateUserName, UserName } from '../../operators/auth.operator';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -13,6 +13,9 @@ export class Navigation {
   currentUserName = signal<string>("");
   userloginStatus = signal<boolean>(false);
   constructor(){
+        if(hasToken){
+          UpdateUserName()
+        }
         UserName.subscribe({
         next:(name)=>{
             this.currentUserName.set(name||"");

@@ -8,23 +8,13 @@ To start a local development server, run:
 
 ```bash
 ng serve
+#  or 
+npm start
+
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
 
 ## Building
 
@@ -34,26 +24,34 @@ To build the project run:
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+# ScreenShots
 
-## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/ba55e614-aac4-4b76-9664-7cba2ecb03ff" />
 
-```bash
-ng test
-```
+## logout
 
-## Running end-to-end tests
+####  On logout, Can't see product Details
 
-For end-to-end (e2e) testing, run:
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/0f9a5c13-baf7-4548-aaf7-23c9acb1fad1" />
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## /login 
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/e29fc0ef-419f-4395-89f3-226915d681c7" />
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/a37a91d7-81cc-4c4d-b24c-3ea925f02cd8" />
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/39bcca0c-4729-484c-a177-29628a9abf3b" />
 
-## Additional Resources
+##  /product
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/6cd7d321-bd22-448e-9fd1-2e023c2eb062" />
+
+## /product/id
+
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/6023199f-78d5-45d5-89a7-29b28ae18d87" />
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/f49da9fd-21bc-4f9d-a807-d25f2c37d9fd" />
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/4feadeb3-a42b-4d63-941e-958503c7facb" />
+
+##  /profile 
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/bc3e59dd-f78d-4f0d-ab74-7f9984251d63" />
+
+

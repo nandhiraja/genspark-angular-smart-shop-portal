@@ -1,7 +1,8 @@
-import { Subject } from "rxjs";
+import { BehaviorSubject, Subject } from "rxjs";
 
-export const UserName = new Subject<string|undefined>();
-export const isLoggedIn = new Subject<boolean|false>();
+export const UserName = new BehaviorSubject<string|undefined>(undefined);
+export const hasToken = !!sessionStorage.getItem("accessToken");
+export const isLoggedIn = new BehaviorSubject<boolean>(hasToken);
 
 
 export const updateUserLoggedInStatus = ()=>{
