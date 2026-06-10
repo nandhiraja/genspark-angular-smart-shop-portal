@@ -1,0 +1,58 @@
+
+
+<h2 class="product-header">World of latest Products</h2>
+
+
+<section id="products-container">
+
+    @if(products().length===0){
+        <div class="spinner-border text-success" role="status">
+        <span class="sr-only"></span>
+    </div>
+    }
+    @for(product of products(); track product.id){
+    
+<div class="card mb-3" style="max-width: 100%; padding: 20px;">
+ 
+    <div class="row g-0">
+    
+    
+    <div class="col-md-3">
+      <img [src]="product.thumbnail" class="img-fluid rounded-start" alt="...">
+    </div>
+
+    <div class="col-md-8">
+        <li class="list-group-item" style="color: rgb(249, 108, 7) ;font-size: 1rem; justify-self: flex-start;">Rating:</li>
+        <li class="list-group-item" style="color: rgb(249, 237, 7) ;font-size: 3rem; text-shadow: 1px 1px 1px black; justify-self: flex-start;">{{"*".repeat(Math.round(product.rating))}}</li>
+       
+        @if(product.availabilityStatus.includes("In")){
+            <li class="list-group-item" style="color: green; justify-self: flex-end;">{{product.availabilityStatus}}</li>
+        }
+        @else{
+         <li class="list-group-item" style="color: rgb(223, 28, 6); justify-self: flex-end;">{{product.availabilityStatus}}</li>
+        }
+
+
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.description}}</p>
+      </div>
+ 
+
+        <ul class="list-group list-group-flush">
+           <li class="list-group-item" style="color:red; text-decoration: line-through;"> ₹ {{product.price}}</li>
+            <li class="list-group-item" style="color: green;">Today's Price {{product.discountPercentage}} %: ₹ {{ (product.price - (product.price * (product.discountPercentage / 100))) | number:'1.2-2' }}</li>
+         </ul>
+
+
+      <div class="card text-end" style="width: 100%;">
+         <a (click)="handleItemDetail(product.id)" class="btn btn-primary">Details</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    
+}
+</section>

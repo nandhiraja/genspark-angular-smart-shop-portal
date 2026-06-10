@@ -1,0 +1,12 @@
+.landing-images{
+    width: 100%;
+}
+
+.landing-heading{
+    justify-self: center;
+    padding:2rem;
+    font-weight: 900;
+    color: rgb(24, 105, 4);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+

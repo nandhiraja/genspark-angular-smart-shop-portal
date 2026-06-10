@@ -1,0 +1,12 @@
+#products-container{
+    max-width: 80%;
+    width: 0 auto;
+    justify-self: center;
+}
+.product-header{
+
+    justify-self: center;
+    font-size: 2rem;
+    padding: 1rem;
+    
+}

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg ">
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SmartShop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="#">Home</a>
+        <a class="nav-link" routerLink="product">Products</a>
+        <a class="nav-link" routerLink="about">About</a>
+        <a class="nav-link disabled" aria-disabled="true">Premium offers</a>
+      </div>
+   
+      @if(userloginStatus()){
+        <div class="right-child">
+          <h2 class="username" routerLink="profile">Welcome, {{capitalize(currentUserName())}}</h2>
+           <a class="btn btn-primary" (click)="logout()">Logout</a>
+           
+        </div>
+      }
+      @else
+      {
+        <div class="right-child">
+           <a class="btn btn-primary" routerLink="login" style="background-color: rgb(47, 47, 246);">Login</a>
+        </div>
+      }
+      
+    </div>
+  </div>
+</nav>

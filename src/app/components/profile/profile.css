@@ -1,0 +1,29 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+.card{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+
+}
+.card-body{
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    min-width: 600px;
+
+}
+.card-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding: 15px 0px;
+    border-bottom: 1px solid black;
+
+}
+.profile-image{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
